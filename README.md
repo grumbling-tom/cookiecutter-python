@@ -5,5 +5,5 @@ A cookiecutter providing a basic scaffolding for Python projects.
 # Usage
 
 ```bash
-cookiecutter cookiecutter-python
+cookiecutter https://github.com/grumbling-tom/cookiecutter-python
 ```
