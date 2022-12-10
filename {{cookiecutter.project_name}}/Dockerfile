@@ -17,4 +17,4 @@ RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 
 # Copy source code
-COPY {{cookiecutter.project_name}} {{cookiecutter.project_name}}
+COPY {{cookiecutter.project_name_snake_case}} {{cookiecutter.project_name_snake_case}}

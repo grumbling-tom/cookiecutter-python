@@ -36,4 +36,4 @@ repos:
         args:
           - "--strict"
           - "-p"
-          - "{{cookiecutter.project_name}}"
+          - "{{cookiecutter.project_name_snake_case}}"

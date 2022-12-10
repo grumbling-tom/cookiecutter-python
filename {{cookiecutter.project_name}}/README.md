@@ -39,7 +39,7 @@ docker build -t {{cookiecutter.project_name}}:latest .
 ## Running the code
 
 ```bash
-python -m {{cookiecutter.project_name}}
+python -m {{cookiecutter.project_name_snake_case}}
 ```
 
 ## Running the tests
