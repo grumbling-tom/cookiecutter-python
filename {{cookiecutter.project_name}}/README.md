@@ -5,8 +5,10 @@
 Presuming that the [pyenv](https://github.com/pyenv/pyenv) executable is available on your `$PATH`, you can create the development environment as follows:
 
 ```bash
-pyenv install 3.8.10
-pyenv virtualenv 3.8.10 {{cookiecutter.project_name}}
+PYTHON_VERSION=$(cat pyproject.toml | grep python | awk '{ print $3 }' | sed 's/"//g')
+
+pyenv install --skip-existing $PYTHON_VERSION
+pyenv virtualenv $PYTHON_VERSION {{cookiecutter.project_name}}
 pyenv activate {{cookiecutter.project_name}}
 ```
 
