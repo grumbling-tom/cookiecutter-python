@@ -7,7 +7,7 @@ authors = ["grumbling-tom <thomas-stokes@protonmail.com>"]
 [tool.poetry.dependencies]
 python = "3.8.10"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^22.10.0"
 pre-commit = "^2.20.0"
 pylint = "^2.15.8"

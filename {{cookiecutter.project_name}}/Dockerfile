@@ -14,7 +14,7 @@ RUN curl -sSL https://install.python-poetry.org | python -
 # Install project dependencies
 COPY poetry.lock pyproject.toml ./
 RUN poetry config virtualenvs.create false
-RUN poetry install --no-dev
+RUN poetry install --without dev
 
 # Copy source code
 COPY {{cookiecutter.project_name_snake_case}} {{cookiecutter.project_name_snake_case}}
