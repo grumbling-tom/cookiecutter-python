@@ -14,7 +14,7 @@ pylint = "^2.15.8"
 isort = "^5.10.1"
 pytest = "^7.2.0"
 mypy = "^0.991"
-notebook = "^6.5.2"
+jupyterlab = "^3.5.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
