@@ -2,7 +2,7 @@
 name = "{{cookiecutter.project_name_snake_case}}"
 version = "0.1.0"
 description = ""
-authors = ["grumbling-tom <thomas-stokes@protonmail.com>"]
+authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 
 [tool.poetry.dependencies]
 python = "3.8.10"

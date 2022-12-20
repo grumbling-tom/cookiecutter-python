@@ -1,4 +1,6 @@
 {
     "project_name": "hello-world",
-    "project_name_snake_case": "{{ cookiecutter.project_name|replace('-', '_') }}"
+    "project_name_snake_case": "{{ cookiecutter.project_name|replace('-', '_') }}",
+    "author_name": "author-name",
+    "author_email": "author@email.com"
 }
