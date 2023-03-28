@@ -27,6 +27,11 @@ version_files = [
 tag_format = "$version"
 update_changelog_on_bump = true
 
+[tool.pylint.main]
+disable = [
+    "C0114" # missing-module-docstring
+]
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
