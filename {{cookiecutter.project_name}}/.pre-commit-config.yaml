@@ -16,8 +16,9 @@ repos:
         entry: pylint
         language: system
         types: ["python"]
-          - --rcfile
-          - pyproject.toml
+        args:
+          - "--rcfile"
+          - "pyproject.toml"
 
       - id: isort
         name: isort
