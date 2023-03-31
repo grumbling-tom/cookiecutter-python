@@ -7,12 +7,19 @@ Presuming that the [pyenv](https://github.com/pyenv/pyenv) executable is availab
 ```bash
 PYTHON_VERSION=$(cat pyproject.toml | grep python | awk '{ print $3 }' | sed 's/"//g')
 
-pyenv install --skip-existing $PYTHON_VERSION
-pyenv virtualenv $PYTHON_VERSION {{cookiecutter.project_name}}
-pyenv activate {{cookiecutter.project_name}}
+pyenv install $PYTHON_VERSION --skip-existing
+pyenv global $PYTHON_VERSION
 ```
 
 [poetry](https://python-poetry.org/) is used for dependency management and is assumed to be available system-wide.
+
+We activate the virtualenvironment using:
+
+```bash
+poetry shell
+```
+
+After that, project dependencies can be installed by calling:
 
 ```bash
 poetry install
